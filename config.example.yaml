@@ -1,0 +1,23 @@
+# Copy this file to config.yaml and adjust non-secret preferences as needed.
+# Provider credentials are accepted only through ANTHROPIC_API_KEY or
+# OPENAI_API_KEY. Never put credentials in this file.
+
+provider: claude
+model: claude-sonnet-4-6
+source_lang: auto
+preset: top5
+
+chunking:
+  max_chunk_chars: 900
+  gap_threshold_ms: 1200
+
+output:
+  output_root: outputs
+  max_line_chars: 42
+  min_entry_chars: 0
+  bom: false
+  skip_existing: false
+
+# Optional path to a CSV containing term,translation pairs.
+glossary: ""
+

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mae-captions"
+version = "0.1.0"
+description = "A command-line workflow for translating and reviewing SRT captions."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "LicenseRef-Mae-Captions-Source-Available"
+license-files = ["LICENSE", "FREELANCER_EXCEPTION.md"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = [
+  "anthropic==0.122.0",
+  "chardet==7.6.0",
+  "openai==3.1.0",
+  "PyYAML==6.0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/chadmzoghby-alt/mae-captions"
+Issues = "https://github.com/chadmzoghby-alt/mae-captions/issues"
+
+[project.scripts]
+mae-captions = "mae_captions.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mae_captions*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
