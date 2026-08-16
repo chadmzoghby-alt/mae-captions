@@ -18,7 +18,7 @@ The project may open contributions later after publishing contributor terms that
 
 ## Maintainer checks
 
-Maintainers create an isolated Python 3.12 environment, install `requirements.txt` and `requirements-ci.txt`, and run the commands in the README's development section. Changes must pass the repository-safety, quality, cross-platform unit-test, package, and dependency-review jobs. Third-party code or text must be identified before inclusion and compatible with the source-available and commercial distribution model.
+Maintainers create an isolated Python 3.12 environment, install `requirements.txt` and `requirements-ci.txt`, and run the commands in the [development guide](docs/development.md). Changes must pass the repository-safety, quality, cross-platform unit-test, package, and dependency-review jobs. Third-party code or text must be identified before inclusion and compatible with the source-available and commercial distribution model.
 
 ## Community conduct decision
 

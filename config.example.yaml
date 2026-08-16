@@ -2,9 +2,13 @@
 # Provider credentials are accepted only through ANTHROPIC_API_KEY or
 # OPENAI_API_KEY. Never put credentials in this file.
 
-provider: claude
-model: claude-sonnet-4-6
-source_lang: auto
+# Local-first example. Replace the model value with the exact ID returned by
+# http://localhost:1234/v1/models after loading it in LM Studio.
+provider: lmstudio
+model: YOUR_LOCAL_MODEL_ID
+base_url: http://localhost:1234/v1
+# The current alpha's review and source-preparation stages require English captions.
+source_lang: English
 preset: top5
 
 chunking:
@@ -20,4 +24,3 @@ output:
 
 # Optional path to a CSV containing term,translation pairs.
 glossary: ""
-
