@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# JavaScript / Tauri
+node_modules/
+ui/dist/
+ui/src-tauri/target/
+ui/src-tauri/binaries/
+
+# Build and runtime data
+build/
+dist/
+var/
+outputs/
+inputs/*.srt
+*.log
+*.spec
+
+# Local configuration and credentials
+config.yaml
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+
+# Local publication control
+HANDOFF.md
+.publication/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
